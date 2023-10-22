@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Página con Menú Fijo</title>
+    <title>Página de Batman</title>
     <style>
-        /* Estilo para el menú */
+        /* Estilos para el menú */
         #menu {
             position: fixed;
             top: 0;
@@ -26,9 +26,29 @@
             font-size: 18px;
         }
 
-        /* Espacio de relleno para mostrar el contenido debajo del menú */
+        /* Estilos para el contenido */
         #content {
-            padding: 100px 0;
+            margin-top: 60px; /* Espacio para el menú fijo */
+            display: flex;
+        }
+
+        #imagen {
+            flex: 1;
+            background-color: #f0f0f0; /* Color de fondo para la imagen */
+            padding: 20px;
+        }
+
+        #informacion {
+            flex: 1;
+            padding: 20px;
+            background-color: #000000; /* Color de fondo para la información */
+            color: #18dd06;
+        }
+
+        #mas-informacion {
+            clear: both;
+            padding: 20px;
+            background-color: #e0e0e0; /* Color de fondo para más información */
         }
     </style>
 </head>
@@ -43,7 +63,14 @@
         </ul>
     </div>
     <div id="content">
-        <!-- Aquí puedes agregar el contenido de tu página debajo del menú -->
+        <div id="imagen">
+            <img src="https://assetsio.reedpopcdn.com/digitalfoundry-2015-is-batman-arkham-knight-the-generational-leap-we-were-hoping-for-1435051185884.jpg?width=1200&height=1200&fit=bounds&quality=70&format=jpg&auto=webp" alt="Batman" width="800" height="600">
+        </div>
+        <div id="informacion">
+            <p>Información sobre Batman...</p>
+        </div>
+    </div>
+    <div id="mas-informacion">
+        <p>Más información sobre Batman...</p>
     </div>
 </body>
-</html>
